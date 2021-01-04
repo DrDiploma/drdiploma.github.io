@@ -1,8 +1,5 @@
 
 /* GOOGLE FONTS IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* GLOBAL COLORS */
 :root{
@@ -26,7 +23,7 @@ body {animation-timing-function: ease;}
 body{
 	font-family: 'Lato', sans-serif;
 	/*font-family: 'Montserrat', sans-serif;*/
-	background-color:#333;
+	background-color:#000000;
 	color: var(--lavender);
 	animation-name: bodyloadin;
 	animation-duration: 3s;
