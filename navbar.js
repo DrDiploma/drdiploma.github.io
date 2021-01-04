@@ -5,6 +5,6 @@ $(function () {
 		} else{
 			$(".item").addClass("active")
 		}
-	};)
+	});
 
 });
