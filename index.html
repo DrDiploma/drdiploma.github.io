@@ -15,59 +15,106 @@
 
   <!-- Custom Javascript -->
   <!-- <script type="text/javascript" src="carousel-imgs.js"></script> -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+</style>
+
   <script type="text/javascript" src="navbar.js"></script>
 
+<script type="text/javascript">
+	// $('.mainbody').delay(11000).fadeIn(0)
+
+	// $(document).read(function(){
+	// 	$('body').click(function(){
+	// 		$('body').fadeOut(3000);
+	// 		$('body').fadeIn(3000);
+	// 	});
+	// });
+	
+	$(document).ready(function(){
+		document.body.style.overflow = 'hidden';
+		$('.mainbody').hide().delay(15000).fadeIn('slow');
+		$('#myVideo').hide().delay(0).fadeIn('slow');
+		setTimeout(function() {
+	       // $rows.removeClass("pageLoad");
+			$('#myVideo').remove()
+
+		}, 15000);
+		// $('#myVideo').hide().delay(11000).remove()
+	});
+
+
+</script>
+
+
 </head>
+
+
+
 <body>
+<div class="container">
+	
+	<video autoplay muted id="myVideo">
+		 <source src="video.mp4" type="video/mp4">
+	</video>
 
-<!-- Hero Banner -->
-<div class="jumbotron text-center hero">
-	 <p>Limited resources, <span>unlimited</span> potential</p>
-	 <h1>Brandon Espinoza</h1>
-	 <p><strong>Design</strong> and <strong>Development</strong> portfolio<p>
 </div>
+	<!-- 
+<video poster="video.mp4" id="backgroundvid">
+	<source src="video.webm" type='video/webm; codecs="vp8.0, vorbis"'>
+	<source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'>
+	<source src="video.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+	<p>Fallback content to cover incompatibility issues</p>
+</video>
+	 -->
 
-<!-- Site Navigation -->
-<nav>
-	<ul class="menu">
-		<li class="logo"><a href="https://www.instagram.com/scuffsmcguffs">Follow @scuffsmcguffs</a></li>
-		<li class="item"><a href="index.html">Home</a></li>
-		<li class="item"><a href="#">Design</a></li>
-		<li class="item"><a href="#">Software</a></li>
-		<li class="item"><a href="sites.html">Websites</a></li>
-		<li class="toggle"><span class="bars"></span></li>
-	</ul>
-</nav>
+<!-- ENTERING DISPLAY BODY -->
+	<div class="mainbody">
+		<!-- Hero Banner -->
+		<div class="jumbotron text-center hero">
+			 <p class="hero-motto">Limited resources, <span class="positive">unlimited</span> potential</p>
+			 <h1 class="hero-name">Brandon Espinoza</h1>
+			 <p class="hero-purpose"><strong>Design</strong> and <strong>Development</strong> portfolio<p>
+		</div>
 
+		<!-- Site Navigation -->
+		<nav>
+			<ul class="menu">
+				<li class="logo"><a href="https://www.instagram.com/scuffsmcguffs">Follow @scuffsmcguffs</a></li>
+				<li class="item"><a href="index.html">Home</a></li>
+				<li class="item"><a href="#">Design</a></li>
+				<li class="item"><a href="#">Software</a></li>
+				<li class="item"><a href="sites.html">Websites</a></li>
+				<li class="toggle"><span class="bars"></span></li>
+			</ul>
+		</nav>
 
-
-<!-- Introduction -->
-<div class="container" id="design-container">
-	<h1 class="text-center intro-text">Introduction</h1>
-		<div class="row">
-			<div class="col-sm-4">
-			<h3>3D Design</h3>
-	      	<p>In 2020 I Started designing with the open source software Blender</p>
-	      	<p>I made a challenge to myself to create one render a day for as long as I could manage</p>
-	      	<p>Check out my progress <a href="https://instagram.com/scuffsmcguffs">here</a>.</p>
-	    </div>
-	    <div class="col-sm-4">
-			<h3>Development</h3>
-			<p>I've been fascinated by software as long as I've had access to a laptop</p>
-			<p>The unlimited potential to improve people's lives, across the globe, still fascinates me to this day</p>
-			<p>My favorite languages are Python and Javascript</p>
-			<p>My favorite topics are Data Scraping & Analyzation, Natural Language Processing, Machine Learning</p>
-	    </div>
-	    <div class="col-sm-4">
-			<h3>Animation</h3>        
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		<!-- Introduction -->
+		<div class="container" id="design-container">
+			<h2 class="text-center intro-text">Introduction</h2>
+				<div class="row">
+					<div class="col-sm-4">
+					<h3>3D Design</h3>
+			      	<p>In 2020 I Started designing with the open source software Blender</p>
+			      	<p>I made a challenge to myself to create one render a day for as long as I could manage</p>
+			      	<p>Check out my progress <a class="instalink" href="https://instagram.com/scuffsmcguffs">here</a>.</p>
+			    </div>
+			    <div class="col-sm-4">
+					<h3>Development</h3>
+					<p>I've been fascinated by software as long as I've had access to a laptop</p>
+					<p>The unlimited potential to improve people's lives, across the globe, still fascinates me to this day</p>
+					<p>My favorite languages are Python and Javascript</p>
+			    </div>
+			    <div class="col-sm-4">
+					<h3>Animation</h3>
+					<p>My first introduction in visual effects began with Adobe's AfterFX</p>
+					<p>I was always intrigued by visual effects in movies</p>
+					<p>they, coupled with software, seemed to make anything possible to experience</p>
+			    </div>
+			</div>
 		</div>
 	</div>
-</div>
 
-<script type="text/javascript">
-</script>
 
 </body>
 </html>
