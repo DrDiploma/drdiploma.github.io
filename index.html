@@ -15,31 +15,27 @@
 
   <!-- Custom Javascript -->
   <!-- <script type="text/javascript" src="carousel-imgs.js"></script> -->
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
-</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+	</style>
 
   <script type="text/javascript" src="navbar.js"></script>
 
 <script type="text/javascript">
-	// $('.mainbody').delay(11000).fadeIn(0)
 
-	// $(document).read(function(){
-	// 	$('body').click(function(){
-	// 		$('body').fadeOut(3000);
-	// 		$('body').fadeIn(3000);
-	// 	});
-	// });
-	
 	$(document).ready(function(){
 		document.body.style.overflow = 'hidden';
-		$('.mainbody').hide().delay(15000).fadeIn('slow');
+		var secsToFade = 1000;
+
+		$('.mainbody').hide().delay(secsToFade).fadeIn('slow');
 		$('#introvid').hide().delay(0).fadeIn('slow');
 		setTimeout(function() {
 	       // $rows.removeClass("pageLoad");
 			$('#introvid').remove()
 
-		}, 15000);
+		}, secsToFade);
 
 		// $('#myVideo').hide().delay(11000).remove()
 	});
@@ -54,29 +50,22 @@
 
 <body>
 
+<!-- GREETING VIDEO -->
+<!-- 
 	<div class="container">	
 		<video autoplay muted id="introvid">
 			 <source src="Video-1.webm" type="video/webm">
 		</video>
 	</div>
+ -->
 
-
-<!-- ENTERING DISPLAY BODY -->
+	
+<!-- ENTERING MAIN DISPLAY BODY -->
 	<div class="mainbody">
 		<video autoplay muted loop id="innervid">
 			 <!-- <source src="video.mp4" type="video/mp4"> -->
 			 <source src="Bgloop-1.webm" type="video/webm">
 		</video>
-
-		<!-- 
-		Hero Banner
-		<div class="text-center hero">
-			<p class="hero-motto">Limited resources, <span class="positive">unlimited</span> potential</p>
-			<h1 class="hero-name">Brandon Espinoza</h1>
-			<p class="hero-purpose"><strong>Design</strong> and <strong>Development</strong> portfolio<p>
-		</div>
-		 -->
-
 
 		<!-- Site Navigation -->
 		<nav>
@@ -90,9 +79,22 @@
 			</ul>
 		</nav>
 
-		<!-- Introduction -->
+		<div>
+			
+			<!-- <p>Brandon Espinoza</p> -->
+		</div>
+
+		<!-- NEW HERO BANNER -->
 		<div class="container" id="design-container">
-			<h2 class="text-center intro-text">Introduction</h2>
+			<h1 class="text-center intro-text brand">Brandon Espinoza</h1>
+			<h2 class="text-center intro-text brand"><span><strong>Design</strong></span> & <span><strong>Development</strong></span> portfolio</h2>
+
+
+
+			<!-- Intro Section -->
+			<div class="intro-section">
+
+				<h2 class="text-center intro-text">Introduction</h2>
 				<div class="row">
 					<div class="col-sm-4">
 					<h3>3D Design</h3>
@@ -112,7 +114,12 @@
 					<p>I was always intrigued by visual effects in movies</p>
 					<p>they, coupled with software, seemed to make anything possible to experience</p>
 			    </div>
+
+
 			</div>
+
+
+
 		</div>
 	</div>
 

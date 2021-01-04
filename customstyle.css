@@ -369,7 +369,6 @@ a:hover{
 		display: block;
 		width: auto;
 	}
-
 	.toggle{
 		display: none;
 	}
@@ -401,7 +400,7 @@ a:hover{
 /* CUSTOMIZED */
 /* SOLO BOLO */
 .intro-text {
-	margin: 10px 10px;
+	margin: 20px 20px;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -450,17 +449,7 @@ h1{
 	color: darkseagreen;
 }
 
-@keyframes navfadein{
-	0% {opacity: 0;}
-}
 
-a{
-	opacity: 1;
-	position:relative;
-	bottom:10px;
-	animation-name: navfadein;
-	animation-duration: 5s;
-}
 
 /* HERO BANNER ANIMATIONS */
 /*
@@ -514,4 +503,24 @@ a{
 	flex-direction: column;
 	align-item: center;
 	justify-content: center;
+}
+
+.brand {
+	font-size: 80px;
+	font-family: 'Yellowtail', cursive;
+
+}
+
+h2.brand  {
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+h2~span {
+	font-style:italic;
+}
+
+.intro-section {
+	position: relative;
+	top: 100px;
 }

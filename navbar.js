@@ -1,10 +1,19 @@
 $(function () {
 	$(".toggle").on("click", function(){
-		if($(".item").hasClass("active")){
-			$(".item").removeClass("active")
+		var item = $(".item")
+		var itemClass = 'active'
+		var designCont = $('.container')
+
+		if(item.hasClass(itemClass)){
+			item.removeClass(itemClass)
+			designCont.css("position", "relative")
+			designCont.css("top", "10px")
 		} else{
-			$(".item").addClass("active")
+			item.addClass(itemClass)
+			designCont.css("position", "relative")
+			designCont.css("top", "150px")
 		}
 	});
+
 
 });
