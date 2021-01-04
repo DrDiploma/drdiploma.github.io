@@ -18,23 +18,18 @@
 
 body {animation-timing-function: ease;}
 body{
-	/*font-family: sans-serif;*/
-	/*font-family: 'Open Sans', sans-serif;*/
-	/*font-family: ;*/
 	font-family: 'Lato', sans-serif;
 	/*font-family: 'Montserrat', sans-serif;*/
 	background-color:#333;
 	color: var(--lavender);
-	/*font-color*/
 	animation-name: bodyloadin;
 	animation-duration: 3s;
-	/*animation-delay: 11s;*/
 }
 
 
 /* VIDEO FULLSCREEN*/
 
-video#backgroundvid{
+introvid#backgroundvid{
 	/*display: flex;*/
 	position: fixed; right:0; bottom:0;
 	min-width: 100%; min-height: 100%;
@@ -43,7 +38,18 @@ video#backgroundvid{
 	background-size: cover;
 
 }
+/*
+.text-center{
 
+	position: fixed; right:0; bottom:0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index:-100;
+
+	background:url(video.mp4) norepeat;
+	background-size: cover;
+
+}
+*/
 /*
 video {
   display: block;
@@ -81,27 +87,6 @@ video {
 }
 */
 
-.hero {
-	background-image: url('lake-02.jpg');
-	background-size: cover;
-	background-blend-mode: multiply;
-	background-position: center;
-	background-color: #444;
-
-	height: 40vh;
-	padding: 1em;
-	color: var(--lavender);
-
-	/*font-family: ;*/
-	font-family: 'Montserrat', sans-serif;
-	/*color*/
-
-
-	display: flex;
-	flex-direction: column;
-	align-item: center;
-	justify-content: center;
-}
 
 
 p:first-child{
@@ -147,7 +132,7 @@ nav{
 	padding: -25px 20px;
 	margin: 5px 5px;
 	/*width: 100vh;*/
-	border-radius: 1em;
+	/*border-radius: 1em;*/
 }
 
 
@@ -160,7 +145,7 @@ a {
 	opacity: 0;
 	text-decoration: none;
 
-	background-color: #222;
+	background-color: transparent;
 	/*font-family: 'Lato', sans-serif;*/
 	/*font-family: 'Montserrat', sans-serif;*/
 	/*font-family: 'Open Sans', sans-serif;*/
@@ -175,7 +160,7 @@ a {
 	color: #949090;
 	padding: 16px 32px;
 	text-align: center;
-	border-radius: 1em;
+	/*border-radius: 1em;*/
 	font-size: 15px;
 	/*font-style: italic;*/
 	margin: 4px 2px;
@@ -236,8 +221,9 @@ a:hover{
 .menu li a{
 	display: block;
     height: 20px;
-    bottom: 11px;
+    bottom: 9px;
     position: relative;
+    background-color: #00000;
 }
 
 .logo a{
@@ -282,7 +268,7 @@ a:hover{
 .toggle{
 	cursor: pointer;
 	position: relative;
-	bottom: 4px;
+	bottom: 10px;
 	right: 4px;
 }
 
@@ -389,6 +375,8 @@ a:hover{
 	}
 	.logo{
 		order:0;
+		position: relative;
+		bottom:5px;
 	}
 	.item{
 		order:1;
@@ -468,11 +456,14 @@ h1{
 
 a{
 	opacity: 1;
+	position:relative;
+	bottom:10px;
 	animation-name: navfadein;
 	animation-duration: 5s;
 }
 
-
+/* HERO BANNER ANIMATIONS */
+/*
 @keyframes hero-name-fade{
 	0% {opacity: 0;}
 }
@@ -482,7 +473,6 @@ a{
 	animation-name: hero-name-fade;
 	animation-duration: 3s;
 }
-
 
 @keyframes hero-purpose-fade{
 	0% {opacity: 0;}
@@ -503,4 +493,25 @@ a{
 	opacity: 1;
 	animation-name: hero-motto-fade;
 	animation-duration: 13s;
+}
+*/
+
+.hero {
+	/*background-image: url('video.mp4');*/
+	/*background-*/
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-position: center;
+	background-color: #444;
+
+	height: 40vh;
+	padding: 1em;
+	color: var(--lavender);
+
+	font-family: 'Montserrat', sans-serif;
+
+	display: flex;
+	flex-direction: column;
+	align-item: center;
+	justify-content: center;
 }

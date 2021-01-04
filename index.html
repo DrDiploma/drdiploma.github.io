@@ -34,12 +34,13 @@
 	$(document).ready(function(){
 		document.body.style.overflow = 'hidden';
 		$('.mainbody').hide().delay(15000).fadeIn('slow');
-		$('#myVideo').hide().delay(0).fadeIn('slow');
+		$('#introvid').hide().delay(0).fadeIn('slow');
 		setTimeout(function() {
 	       // $rows.removeClass("pageLoad");
-			$('#myVideo').remove()
+			$('#introvid').remove()
 
 		}, 15000);
+
 		// $('#myVideo').hide().delay(11000).remove()
 	});
 
@@ -52,30 +53,30 @@
 
 
 <body>
-<div class="container">
-	
-	<video autoplay muted id="myVideo">
-		 <source src="video.mp4" type="video/mp4">
-	</video>
 
-</div>
-	<!-- 
-<video poster="video.mp4" id="backgroundvid">
-	<source src="video.webm" type='video/webm; codecs="vp8.0, vorbis"'>
-	<source src="video.ogv" type='video/ogg; codecs="theora, vorbis"'>
-	<source src="video.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
-	<p>Fallback content to cover incompatibility issues</p>
-</video>
-	 -->
+	<div class="container">	
+		<video autoplay muted id="introvid">
+			 <source src="Video-1.webm" type="video/webm">
+		</video>
+	</div>
+
 
 <!-- ENTERING DISPLAY BODY -->
 	<div class="mainbody">
-		<!-- Hero Banner -->
-		<div class="jumbotron text-center hero">
-			 <p class="hero-motto">Limited resources, <span class="positive">unlimited</span> potential</p>
-			 <h1 class="hero-name">Brandon Espinoza</h1>
-			 <p class="hero-purpose"><strong>Design</strong> and <strong>Development</strong> portfolio<p>
+		<video autoplay muted loop id="innervid">
+			 <!-- <source src="video.mp4" type="video/mp4"> -->
+			 <source src="Bgloop-1.webm" type="video/webm">
+		</video>
+
+		<!-- 
+		Hero Banner
+		<div class="text-center hero">
+			<p class="hero-motto">Limited resources, <span class="positive">unlimited</span> potential</p>
+			<h1 class="hero-name">Brandon Espinoza</h1>
+			<p class="hero-purpose"><strong>Design</strong> and <strong>Development</strong> portfolio<p>
 		</div>
+		 -->
+
 
 		<!-- Site Navigation -->
 		<nav>
