@@ -1,4 +1,10 @@
 
+/* GOOGLE FONTS IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* GLOBAL COLORS */
 :root{
 	--lavender: lavenderblush;
 
@@ -278,6 +284,7 @@ a:hover{
 	height: 2px;
 	position: relative;
 	width: 18px;
+	opacity: .5;
 }
 
 .bars::before,.bars::after{
@@ -400,7 +407,7 @@ a:hover{
 /* CUSTOMIZED */
 /* SOLO BOLO */
 .intro-text {
-	margin: 20px 20px;
+	margin: 40px 20px;
 	/*font-family: 'Lato', sans-serif;*/
 }
 
@@ -485,9 +492,10 @@ h1{
 }
 */
 
+/*
 .hero {
-	/*background-image: url('video.mp4');*/
-	/*background-*/
+	background-image: url('video.mp4');
+	background-
 	background-size: cover;
 	background-blend-mode: multiply;
 	background-position: center;
@@ -504,6 +512,7 @@ h1{
 	align-item: center;
 	justify-content: center;
 }
+*/
 
 .brand {
 	font-size: 80px;
@@ -516,8 +525,9 @@ h2.brand  {
 	font-family: 'Poppins', sans-serif;
 }
 
-h2~span {
+h2 span {
 	font-style:italic;
+	color: darkseagreen;
 }
 
 .intro-section {
