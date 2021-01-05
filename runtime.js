@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	document.body.style.overflow = 'hidden';
-	var secsToFade = 1000;
+	var secsToFade = 10;
 
 	$('.mainbody').hide().delay(secsToFade).fadeIn('slow');
 	$('#introvid').hide().delay(0).fadeIn('slow');

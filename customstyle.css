@@ -411,7 +411,6 @@ a:hover{
 
 .instalink{
 	all: initial;
-	
 }
 
 .instalink {
@@ -420,11 +419,11 @@ a:hover{
 	/*background-color: white;*/
 	font-family: 'Montserrat', sans-serif;
 	/*font-family: ;*/
-	opacity: .4;
+	/*opacity: .4;*/
 	margin: 3px;
 	padding: 2;
 	font-size: 15px;
-	color: antiquewhite;
+	color: darkseagreen;
 	transition: 0.4;
 
 }
@@ -512,7 +511,7 @@ h1{
 */
 
 .brand {
-	font-size: 80px;
+	font-size: 90px;
 	font-family: 'Yellowtail', cursive;
 
 }
