@@ -11,7 +11,7 @@ $(function () {
 		} else{
 			item.addClass(itemClass)
 			designCont.css("position", "relative")
-			designCont.css("top", "150px")
+			designCont.css("top", "170px")
 		}
 	});
 
